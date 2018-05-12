@@ -1,4 +1,7 @@
-.idea/
-node_modules/
-public/
-*~
+.idea
+node_modules
+npm-debug.log
+package-lock.json
+yarn.lock
+
+/public

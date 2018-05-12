@@ -1,13 +1,12 @@
 import $ from 'jquery';
 import Handlebars from 'handlebars';
-import createID from '../lib/createid';
 
 import TaskList from './task-list'
 
 
 class TaskBoard {
     constructor(title, ui) {
-        this.id = createID();
+        this.id = Date.now();
         this.ui = ui;
         this.title = title || 'Task Board';
         this.lists = JSON.parse(localStorage.getItem('lists')) || [];
